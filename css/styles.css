@@ -149,6 +149,7 @@ header .section {
 .contacts-links {
   padding-top: 32px;
   padding-bottom: 32px;
+  position: relative;
 
   font-style: normal;
   color: var(--primary-title-color);
@@ -196,15 +197,11 @@ header .section {
 
 /* линия под активной страницей */
 
-.menunav-links.current {
-  padding-bottom: 0px;
-}
-
-.menunav-links.current::after {
+.current::after {
   content: '';
   display: block;
   width: 100%;
-  position: relative;
+  position: absolute;
   margin-top: 28px;
 
   height: 4px;
@@ -337,6 +334,7 @@ header .section {
 
 .job-list-item {
   width: 370px;
+  position: relative;
 }
 
 .job-title {
@@ -350,6 +348,14 @@ header .section {
 }
 
 .job-description {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
