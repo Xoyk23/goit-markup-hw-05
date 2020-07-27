@@ -185,7 +185,6 @@ header .section {
 .contacts-links:focus .icon-envelope {
   color: var(--accent-color);
   fill: var(--accent-color);
-  position: relative;
 }
 
 .team-socials-item-link:hover,
@@ -196,6 +195,22 @@ header .section {
 }
 
 /* линия под активной страницей */
+
+.menunav-links.current {
+  padding-bottom: 0px;
+}
+
+.menunav-links.current::after {
+  content: '';
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-top: 28px;
+
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
 
 /* оформление списка контактов */
 .contacts-links {
