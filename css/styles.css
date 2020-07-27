@@ -740,6 +740,7 @@ footer div.section {
   position: absolute;
   top: 0;
   left: 0;
+  transform: translateY(100%);
 
   width: 100%;
   height: 100%;
@@ -759,6 +760,8 @@ footer div.section {
 
 .portfolio-item-link:hover .portfolio-description {
   opacity: 1;
+  transform: translateY(0%);
+  transition: 250ms transform linear;
 }
 
 a {
