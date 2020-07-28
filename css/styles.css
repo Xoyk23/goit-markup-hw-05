@@ -158,6 +158,8 @@ header .section {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-links {
@@ -168,11 +170,15 @@ header .section {
 .icon-smartphone {
   margin-right: 10px;
   fill: var(--primary-text-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-envelope {
   margin-right: 10px;
   fill: var(--primary-text-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Оформление интерактивных элементов */
@@ -452,14 +458,16 @@ header .section {
   height: 44px;
   border-radius: 50%;
   background-color: var(--primary-white-color);
-  /* background-position: center;
-  background-repeat: no-repeat; */
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-socials-team {
   width: 20px;
   height: 20px;
   fill: var(--socials-main-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-socials-item-link:hover .icon-socials-team {
@@ -491,6 +499,8 @@ header .section {
   box-sizing: border-box;
   border: 1px solid var(--socials-main-color);
   border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-item:hover {
@@ -517,6 +527,8 @@ header .section {
 
 .client_logo {
   fill: var(--socials-main-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-title {
@@ -625,8 +637,8 @@ footer div.section {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  /* background-position: center;
-  background-repeat: no-repeat; */
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon_footer {
@@ -670,8 +682,6 @@ footer div.section {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-
-  /* border: 1px solid var(--portfolio-card-border-color); */
 }
 
 .border-box {
@@ -756,6 +766,8 @@ footer div.section {
   line-height: 1.56;
   letter-spacing: 0.03em;
   opacity: 0;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item-link:hover .portfolio-description {
@@ -825,6 +837,8 @@ b {
   color: var(--primary-white-color);
   background-color: var(--secondaty-accent-color);
   cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* Пока оставить цвета для вторичных кнопок */
 }
 .button-filter-secondary {
