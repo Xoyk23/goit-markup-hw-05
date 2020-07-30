@@ -498,13 +498,13 @@ header .section {
   width: 170px;
   height: 90px;
   box-sizing: border-box;
-  border: 1px solid var(--socials-main-color);
+  /* border: 1px solid var(--socials-main-color);
   border-radius: 4px;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.clients-list-item:hover {
+.clients-list-item-link:hover {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
@@ -524,6 +524,11 @@ header .section {
   align-items: center;
   width: 170px;
   height: 90px;
+
+  border: 1px solid var(--socials-main-color);
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client_logo {
